@@ -20,19 +20,16 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Specifications
 
-* Queen can attack if target is "above" or "below"
-    * Input: Queen (3,3), Target (3,1)
-    * Output: Can attack
-* Queen can attack if target is "right" or "left"
-    * Input: Queen (3,3), Target (2,3)
-    * Output: Can attack
-* Queen can attack if target is diagonal
-    * Input: Queen (3,3), Target (2,2)
-    * Output: Can attack
-* Queen cannot attack targets that do not meet these criteria
-    * Input: Queen (3,3), Target (4,1)
-    * Output: Cannot attack
-
+* Returns angle of minute hand based on time entered
+    * Input: 4:20
+    * Output: 120
+* Returns angle of hour hand based on time entered
+    * Input: 4:20
+    * Output: 130
+* Returns the difference between minute and hour hands
+    * Input: 4:20
+    * Output: 10
+    
 ## Known Bugs
 
 _{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
