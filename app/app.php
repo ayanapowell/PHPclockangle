@@ -12,6 +12,11 @@
         return $app['twig']->render('homepage.html.twig');
     });
 
+    $app->post('/process', function() use ($app) {
+        $clock = new Clockangle;
+        $result = $clock->getAngleDifference($_POST['hour'], $_POST['minutes']);
+        return $app['twig']->render('results.html.twig', array('results'=>$result));
+    });
 
     return $app;
 ?>
